@@ -1,3 +1,5 @@
+// In this Question we are asked to find the count of all the subarrays having zero(0) sum.
+
 import java.util.* ;
 import java.io.*; 
 
