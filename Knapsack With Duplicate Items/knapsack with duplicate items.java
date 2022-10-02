@@ -26,12 +26,12 @@ class Solution{
         // return memo.get(currentKey);
         
         if(dp[currentItem][capacity] != -1)
-        return dp[capacity][currentItem];
+        return dp[currentItem][capacity];
         
         if(currentItemweight <= capacity)
-        consider = currentItemprofit + maxProfit(wt,val,currentItem,capacity - currentItemweight,N,memo,dp);
+        consider = currentItemprofit + maxProfit(wt,val,capacity - currentItemweight,currentItem,N,memo,dp);
         
-        int notConsider = maxProfit(wt,val,currentItem+1,capacity,N,memo,dp);
+        int notConsider = maxProfit(wt,val,capacity,currentItem+1,N,memo,dp);
         
         // memo.put(currentKey,Math.max(consider,notConsider));
         // return memo.get(currentKey);
