@@ -16,7 +16,7 @@ class GfG
         int answer=0;
         int prefixSum=0;
         
-        memo.put(prefixSum,-1); // In the hashMap place value = -1 for key = 0
+        memo.put(prefixSum,-1); // In the hashMap place value(currentIndex) = -1 for key(prefixSum) = 0
         
         for(int i=0; i<n;i++){
             prefixSum+=arr[i]; // As we traverse through the array add each number we encounter ,  in the prefixSum (i.e 0) 
